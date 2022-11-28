@@ -1,12 +1,26 @@
-.nav {
-    font-size: 16px;
-    line-height: 20px;
+* {
+    margin: 0;
+    padding: 0;
 }
 
+header {
+    height: 76px;
+}
+.nav__link {
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
 .title {
     font-weight: 600;
     font-size: 64px;
     line-height: 70px;
+    margin-top: 64px;
+    margin-bottom: 16px;
 }
 
 .title-p {
@@ -24,6 +38,7 @@
     font-size: 48px;
     line-height: 59px;
     color: #000000;
+    margin-bottom: 32px;
 }
 
 .name-offer {
@@ -31,12 +46,14 @@
     font-size: 24px;
     line-height: 24px;
     color: #000000;
+    margin-bottom: 8px;
 }
 
 .desc-offer {
     font-size: 14px;
     line-height: 17px;
     color: #888888;
+    margin-bottom: 12px;
 }
 
 .price {
@@ -54,14 +71,15 @@
     color: #888888;
 }
 
-.footer-heading {
+.footer__heading {
     font-weight: 500; 
     font-size: 24px;
     line-height: 29px;
     color: #000000;
+    margin-bottom: 12px;
 }
 
-.footer-link {
+.footer__link {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -69,10 +87,15 @@
     text-decoration: none;
 }
 
-.footer-form-p {
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__form_p {
     font-size: 14px;
     line-height: 16px;
     color: #000000;
+    margin-bottom: 16px;
 }
 
 .email {
