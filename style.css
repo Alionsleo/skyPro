@@ -200,17 +200,17 @@ body {
     flex-wrap: wrap;
 }
 
-.catalog__item {
+.product {
     width: 378px;
     display: flex;
     flex-direction: column
 }
 
-.catalog__item_picture {
+.product_picture {
     margin-bottom: 10px;
 }
 
-.catalog__item_name {
+.product_title {
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -219,7 +219,7 @@ body {
     margin-bottom: 8px;
 }
 
-.catalog__item_description {
+.product_description {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -228,7 +228,7 @@ body {
     margin-bottom: 12px;
 }
 
-.catalog__item_price {
+.product_price {
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -275,7 +275,7 @@ body {
     margin-bottom: 12px;
 }
 
-.footer__menu__links {
+.footer__menu-links {
     display: flex;
     flex-direction: column;
     gap: 12px;
