@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@600&display=swap');
+.top {
+    &__cart {
+        height: 400px;
+        background-image: url(img/topcart.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: #C4C4C4;
+    }
+}
+
+.cart {
+    display: grid;
+    margin-top: 64px;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 60px;
+    &__info {
+        grid-column: span 8;
+        &_row_title {
+            display: flex;
+            justify-content: space-between;
+        }
+        &_title {
+            font-weight: 400;
+            font-size: 16px;
+            color: #000000;
+        }
+        &_item {
+            display: flex;
+            gap: 32px;
+            margin: 32px 0;
+            padding: 32px 0 0;
+            border-top: 0.5px solid #CACDD8;
+            &_img {
+                width: 173;
+            }
+            &_data {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+            &_col {
+                font-family: 'Poppins';
+                width: 71px;
+                height: 51px;
+                background: #F7F6F6;
+                border-radius: 6px; 
+                border: none;
+                text-align: center;
+            }
+            &_name {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 29px;
+                color: #000000;
+            }
+            &_description {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #888888;
+            }
+            &_price {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                color: #050505;
+            }
+            &_action {
+                display: flex;
+                gap: 30px;
+                &_link {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 210%;
+                    text-decoration-line: underline;
+                    color: #000000;
+                }
+            }
+        }
+        &_button {
+            width: 200px;
+            height: 37px;
+            left: 328px;
+            top: 983px;
+            box-sizing: border-box;
+            background: none;
+            border: 1px solid #000000;
+            border-radius: 50px;
+            margin-top: 18px;
+            margin-bottom: 64px;
+        }
+    }
+    &__form {
+        height: 566px;
+        width: 379px;
+        grid-column: span 4;
+        background: #F7F6F6;
+        border-radius: 20px;
+        &__heading {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+            color: #000000;
+            margin-top: 42px;
+            margin-bottom: 35px;
+        }
+        &__inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 44px;
+            align-items: center;
+        }
+        &__input {
+            outline: none;
+            background: none;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 1px solid #CACDD8;
+            width: 288px;
+            padding-left: 1px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+            &::placeholder {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #000000;
+                padding-left: 1px;
+            }
+        }
+        &__info {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            align-items: center;
+        }
+        &__summary {
+            padding-top: 64px;
+            text-align: center;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        }
+        &__button {
+            outline: none;
+            background: none;
+            box-sizing: border-box;
+            border: 1px solid #040404;
+            border-radius: 20px;
+            height: 41px;
+            width: 290px;
+            margin-top: 18px;
+        }
+    }
+}
