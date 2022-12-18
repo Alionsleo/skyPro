@@ -11,6 +11,11 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
 .top {
     height: 735px;
     background-image: url(img/topbg.jpg);
@@ -18,8 +23,15 @@ body {
     background-size: cover;
     background-position: center;
     background-color: #C4C4C4;
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+}
+
+.top_catalog {
+    height: 400px;
+    background-image: url(img/topcatalog.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #C4C4C4;
 }
 
 .header {
@@ -84,6 +96,17 @@ body {
     width: 792px;
 }
 
+.top__title_catalog {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    color: #FFFFFF;
+    padding-top: 127px;
+    padding-bottom: 16px;
+    width: 792px;
+}
+
 .top__p {
     font-style: normal;
     font-weight: 400;
@@ -102,56 +125,67 @@ body {
     color: #FFFFFF;
 }
 
-.special_offer {
-    margin-bottom: 72px;
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+.for-box {
+    margin-top: 64px;
 }
 
-.special_offer__title {
+.for__title {
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
     line-height: 59px;
-    display: flex;
-    align-items: center;
     color: #000000;
-    padding-top: 64px;
-    padding-bottom: 32px;
+    margin-bottom: 32px;
 }
 
-.special_offer__list {
-    display: flex;
+.for {
+    display: grid;
     gap: 32px;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(12, 1fr);
 }
 
-.special_offer__item {
-    width: 378px;
+.for__item {
+    height: 415px;
     display: flex;
-    flex-direction: column
+    justify-content: center;
+    align-items: center;
+    grid-column: span 4;
 }
 
-.special_offer__item_picture {
-    margin-bottom: 10px;
-    width: 100%;
-}
-
-.special_offer__item_name {
+.for__item>a {
     font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    color: #000000;
-    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 41px;
+    color: #FFFFFF;
 }
 
-.special_offer__item_description {
-    font-style: normal;
-    font-size: 14px;
-    line-height: 17px;
-    color: #888888;
-    margin-bottom: 12px;
+.for__item_big {
+    grid-column: span 6;
+}
+
+.for__item_1 {
+    background-image: url(img/for/for-1.jpg);
+}
+
+.for__item_2 {
+    background-image: url(img/for/for-2.jpg);
+}
+
+.for__item_3 {
+    background-image: url(img/for/for-3.jpg);
+}
+
+.for__item_4 {
+    background-image: url(img/for/for-4.jpg);
+}
+
+.for__item_5 {
+    background-image: url(img/for/for-5.jpg);
+}
+
+.special_offer {
+    margin-top: 64px;
 }
 
 .price_block {
@@ -159,15 +193,8 @@ body {
     gap: 32px;
 }
 
-.special_offer__item_price {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    color: #050505;
-}
 
-.special_offer__item_old_price {
+.product_old_price {
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -178,8 +205,6 @@ body {
 
 .catalog {
     margin-bottom: 64px;
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
 }
 
 .catlog__title {
@@ -248,8 +273,6 @@ body {
 
 .footer {
     background-color: #F7F6F6;
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
     display: flex;
     height: 207px;
     justify-content: space-between;
@@ -383,4 +406,62 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: #000000;
+}
+
+.widget {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 64px;
+    margin-bottom: 40px;
+}
+
+.breadcrumb {
+    list-style: none;
+    display: flex;
+}
+
+.breadcrumb__item_link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.breadcrumb__item:before {
+    content: "/";
+    padding: 0 10px;
+}
+
+.breadcrumb__item:nth-child(1):before {
+    display: none;
+}
+
+.sort {
+    box-sizing: border-box;
+    width: 288px;
+    height: 41px;
+    border: 1px solid #C4C4C4;
+    border-radius: 20px;
+    padding-left: 14px;
+
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background-image: url(./img/arrow.svg);
+    background-repeat: no-repeat, repeat;
+    background-position: right 14px top 50%, 0 0;
+}
+
+.sort__option {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    width: 199px;
+    height: 20px;
 }
