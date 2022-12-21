@@ -93,7 +93,7 @@ body {
     color: #FFFFFF;
     padding-top: 63px;
     padding-bottom: 16px;
-    width: 792px;
+    max-width: 792px;
 }
 
 .top__title_catalog {
@@ -193,7 +193,9 @@ body {
     gap: 32px;
 }
 
-
+.product_picture {
+    max-width: 100%;
+}
 .product_old_price {
     font-style: normal;
     font-weight: 500;
