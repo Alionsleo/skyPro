@@ -657,4 +657,35 @@ body {
   height: 41px;
   width: 290px;
   margin-top: 18px;
+}
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+  .for__item {
+    height: 268px;
+  }
+  .catalog__list {
+    gap: 29px;
+  }
+  .catalog__link {
+    display: block;
+    margin-top: 32px;
+  }
+  .product_price {
+    margin-bottom: 0px;
+  }
+  .footer__logo {
+    display: none;
+  }
+  .footer__form_email .footer__form_btn {
+    width: 368px;
+  }
+  .cart {
+    grid-template-columns: repeat(8, 1fr);
+    gap: 0;
+    margin-bottom: 64px;
+  }
 }/*# sourceMappingURL=style.css.map */
