@@ -14,7 +14,7 @@
         }
         &__link {
             display: block;
-           margin-top: 32px;
+            margin-top: 32px;
         }
     }
     .product {
@@ -36,6 +36,10 @@
        grid-template-columns: repeat(8, 1fr);
        gap: 0;
        margin-bottom: 64px;
+       &__info_button_black {
+            background: #000000;
+            color: #FFFFFF;
+       }
     }
 }
 
