@@ -254,6 +254,18 @@ body {
   width: 378px;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.product__buttons {
+  display: none;
+}
+.product:hover .product__buttons {
+  display: flex;
+  left: 300px;
+  top: 11px;
+  gap: 25px;
+  position: absolute;
+  align-items: center;
 }
 
 .product_picture {
@@ -687,6 +699,14 @@ body {
   }
   .product_price {
     margin-bottom: 0px;
+  }
+  .product:hover .product__buttons {
+    display: flex;
+    left: 300px;
+    top: 11px;
+    gap: 25px;
+    position: absolute;
+    align-items: center;
   }
   .footer__logo {
     display: none;
