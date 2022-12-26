@@ -1,3 +1,16 @@
+@keyframes productActive {
+	0% {
+		transform: scale(1);
+		transform-origin: 50% 0%;
+        opacity: 0.6;
+	}
+
+	100% {
+		transform: scale(1.03);
+		transform-origin: 50% 0%;
+        opacity: 0.6;
+	}
+}
 
 * {
     margin: 0;
@@ -68,12 +81,14 @@ body {
     padding-left: 32px;
     padding-right: 32px;
     box-sizing: border-box;
+    transition: border .5s;
+    &::placeholder {
+        color: #FFFFFF;
+    }
+    &:focus {
+        border: 1px solid #000000;
+    }
 }
-
-.top__input::placeholder {
-    color: #FFFFFF;
-}
-
 .menu {
     display: flex;
     justify-content: space-between;
@@ -93,12 +108,11 @@ body {
     flex: none;
     order: 0;
     flex-grow: 0;
+    transition: font-weight .3s;
+    &:hover {
+        font-weight: 600;
+    }
 }
-
-.nav__link:hover {
-    text-decoration: underline;
-}
-
 .top__title {
     font-style: normal;
     font-weight: 600;
@@ -163,6 +177,13 @@ body {
     justify-content: center;
     align-items: center;
     grid-column: span 4;
+    transition: opacity .5s;
+    &:hover {
+        opacity: .6;
+    }
+    &:hover>a{
+        font-weight: 700;
+    }
 }
 
 .for__item>a {
@@ -171,6 +192,7 @@ body {
     font-size: 34px;
     line-height: 41px;
     color: #FFFFFF;
+    transition: color .5s;
 }
 
 .for__item_big {
@@ -253,7 +275,17 @@ body {
     &__buttons {
         display: none;
     }
+    &__button {
+        fill: #C4C4C4;
+        &:hover {
+            fill: #000;
+        }
+    }
+    &:hover {
+        animation: productActive .5s ease-out 0s 1 normal both;
+    }
     &:hover &__buttons {
+        z-index: 1;
         display: flex;
         left: 300px;
         top: 11px;
@@ -433,9 +465,13 @@ body {
     width: 275px;
     height: 46px;
     outline: none;
-}
-.footer__form_email::placeholder {
-    color: #C4C4C4;
+    transition: border .5s;
+    &::placeholder {
+        color: #C4C4C4;
+    }
+    &:focus {
+        border: 1px solid #000000;
+    }
 }
 
 .footer__form_btn {
@@ -450,6 +486,11 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: #000000;
+    &:hover {
+        color: #FFFFFF;
+        background: #000000;
+        border: 1px solid rgba(222, 215, 215, 0.41);;
+    }
 }
 
 .widget {
