@@ -15,6 +15,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: inherit;
 }
 
 a {
@@ -81,12 +82,12 @@ body {
     padding-left: 32px;
     padding-right: 32px;
     box-sizing: border-box;
-    transition: border .5s;
+    transition: border .1s;
     &::placeholder {
         color: #FFFFFF;
     }
     &:focus {
-        border: 1px solid #000000;
+        border: 3px solid #FFFFFF;
     }
 }
 .menu {
@@ -108,9 +109,8 @@ body {
     flex: none;
     order: 0;
     flex-grow: 0;
-    transition: font-weight .3s;
     &:hover {
-        font-weight: 600;
+        border-bottom: .5px solid white;
     }
 }
 .top__title {
@@ -346,7 +346,6 @@ body {
     padding-bottom: 40px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
     &__content {
         width: 792px;
@@ -512,12 +511,11 @@ body {
         font-size: 16px;
         line-height: 32px;
         color: #000000;
-        transition: font-weight .5s;
         &_active {
             font-weight: 600;
         }
         &:hover {
-            font-weight: 600;
+            border-bottom: .5px solid black;
         }
         }
         &:before {

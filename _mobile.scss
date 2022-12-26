@@ -121,8 +121,23 @@
         justify-items: center;
         &__info {
             grid-column: 1 / -1;
-            &__item_img {
-                display: none;
+            &_item {
+                gap: 0px;
+                &_left {
+                    gap: 0px;
+                }
+                &_img {
+                    display: none;
+                }
+                &_name {
+                    font-size: 18px;
+                }
+                &_description {
+                    font-size: 12px;
+                }
+                &_price {
+                    font-size: 18px;
+                }
             }
             &_row_title {
                 display: none;

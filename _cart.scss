@@ -32,6 +32,12 @@
             margin: 32px 0;
             padding: 32px 0 0;
             border-top: 0.5px solid #CACDD8;
+            justify-content: space-between;
+            align-items: flex-start;
+            &_left {
+                display: flex;
+                gap: 32px;
+            }
             &_img {
                 width: 173;
             }
@@ -39,6 +45,7 @@
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
+                width: 276px;
             }
             &_col {
                 font-family: 'Poppins';
@@ -48,6 +55,7 @@
                 border-radius: 6px; 
                 border: none;
                 text-align: center;
+                outline: none;
             }
             &_name {
                 font-weight: 500;
