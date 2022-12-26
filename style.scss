@@ -248,7 +248,19 @@ body {
 .product {
     width: 378px;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    position: relative;
+    &__buttons {
+        display: none;
+    }
+    &:hover &__buttons {
+        display: flex;
+        left: 300px;
+        top: 11px;
+        gap: 25px;
+        position: absolute;
+        align-items: center;
+    }
 }
 
 .product_picture {
