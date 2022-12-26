@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -40,6 +41,12 @@ body {
     justify-content: space-between;
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
     padding: 16px 0px;
+    &__logo {
+        fill: white;
+        &:hover {
+            filter: drop-shadow(5px 5px 10px #000);
+        }
+    }
 }
 
 .logo {
@@ -310,6 +317,13 @@ body {
         flex-direction: column;
         gap: 12px;
     }
+    &__logo {
+        fill: black;
+        &:hover {
+            fill: white;
+            filter: drop-shadow(5px 5px 10px #000);
+        }
+    }
 }
 
 .footer__menu_title {
@@ -333,10 +347,11 @@ body {
     line-height: 17px;
     color: #888888;
     text-decoration: none;
-}
-
-.footer__menu_link:hover {
-    text-decoration: underline;
+    transition: all .5s;
+    &:hover {
+        color: #000;
+        font-weight: 600;
+    }
 }
 
 .footer__contacts_title {
@@ -354,10 +369,11 @@ body {
     line-height: 17px;
     color: #888888;
     text-decoration: none;
-}
-
-.footer__contacts_link:hover {
-    text-decoration: underline;
+    transition: all .5s;
+    &:hover {
+        font-weight: 600;
+        color: #000;
+    }
 }
 
 .social_links {
@@ -368,6 +384,11 @@ body {
 .social_links__img {
     height: 23px;
     width: 23px;
+    fill: #888888;
+    transition: fill .5s;
+    &:hover {
+        fill: #000000;
+    }
 }
 
 .footer__form {
@@ -429,23 +450,29 @@ body {
 .breadcrumb {
     list-style: none;
     display: flex;
-}
-
-.breadcrumb__item_link {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
-    color: #000000;
-}
-
-.breadcrumb__item:before {
-    content: "/";
-    padding: 0 10px;
-}
-
-.breadcrumb__item:nth-child(1):before {
-    display: none;
+    &__item {
+        &_link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: #000000;
+        transition: font-weight .5s;
+        &_active {
+            font-weight: 600;
+        }
+        &:hover {
+            font-weight: 600;
+        }
+        }
+        &:before {
+            content: "/";
+            padding: 0 10px;
+        }
+        &:nth-child(1):before {
+            display: none;
+        }
+    }
 }
 
 .sort {
